@@ -1,0 +1,101 @@
+html{
+   font-size:62,5%; 
+}
+
+/*Sección de globles*/
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+.contenedor{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Estilos del Header*/
+.site-header.inicio{
+    background-image: url(../img/header.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 43rem;
+}
+
+.barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.navegacion a{
+    color: #ffffff;
+    font-family: sans-serif;
+    padding-right: 2rem;
+    text-decoration:none;
+}
+
+.navegacion a:hover{
+    color:#71B100;
+}
+
+.titulo-header{
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.titulo-header h1{
+    color:#ffffff;
+    max-width:600px;
+    line-height: 2;
+    padding-bottom: 2rem ;
+}
+
+/*Iconos-index*/
+.contenedor h2{
+    text-align: center;
+}
+.iconos-index{
+   display:flex; 
+   justify-content: space-between;
+}
+
+.icono{
+    flex-basis: calc(33.3% - 2rem);
+    text-align:center; 
+    line-height: 2;
+}
+
+.icono h3{
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+/*Banner index*/
+.banner{
+    background-image: url(../img/encuentra.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+}
+
+.texto-banner{
+    flex: 1;
+    color: #ffffff;
+}
+
+.texto-banner p{
+    font-size: 1rem;
+}
