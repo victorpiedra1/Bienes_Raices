@@ -1,5 +1,9 @@
 html{
+   box-sizing: border-box;
    font-size:62,5%; 
+}
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 /*Sección de globles*/
@@ -11,6 +15,69 @@ body{
     max-width: 1100px;
     margin: 0 auto;
 }
+
+img{
+    max-width: 100%;
+}
+
+h1{
+   font-size: 2.4rem; 
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.6rem;
+}
+
+h4{
+    font-size: 1.2rem;
+}
+
+/* Uitlidades*/
+
+.cambio-seccion{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.texto-centrado{
+    text-align: center;
+}
+
+.fw-300{
+   font-weight: 300; 
+}
+
+.d-block{
+    display: block !important;
+}
+
+.boton{
+ color: #ffffff;
+ font-weight: 700;
+ text-decoration: none;
+ padding: 0.8rem 3rem;
+ margin-top: 1rem;
+ display: inline-block;
+ text-align: center;
+}
+
+.boton-amarillo{
+  background-color: #E08709;
+}
+
+.boton-verde{
+  background-color: #71B100;
+}
+
+.b-ver-todas{
+    display: flex;
+    justify-content: flex-end;
+}
+
 
 /* Estilos del Header*/
 .site-header.inicio{
@@ -54,9 +121,7 @@ body{
 }
 
 /*Iconos-index*/
-.contenedor h2{
-    text-align: center;
-}
+
 .iconos-index{
    display:flex; 
    justify-content: space-between;
@@ -72,10 +137,45 @@ body{
     text-transform: uppercase;
 }
 
+/*Sección principal etiquetas*/
 
+.contenedor-etiquetas{
+    display: flex;
+    justify-content: space-between;
+}
 
+.etiqueta{
+    flex-basis: calc(33.3% - 1rem);
+    border: 1px solid #b5b5b5;
+    background-color: #f5f5f5;
+}
 
+.texto-etiqueta{
+    padding: 2rem;
+}
 
+.texto-etiqueta h3{
+    margin: 0;
+}
+
+.texto-etiqueta p{
+    line-height: 1.5;
+}
+
+.precio{
+    color:#71B100;
+    font-weight: 700;
+}
+
+.iconos-caracteristicas{
+    list-style: none;
+    padding:0;
+    display: flex;
+}
+
+.iconos-caracteristicas li{
+    display: flex;
+}
 
 
 
