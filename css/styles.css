@@ -102,7 +102,7 @@ h4{
     text-decoration:none;
 }
 
-.navegacion a:hover{
+.navegacion a:hover{ /*Pseudo selector*/
     color:#71B100;
 }
 
@@ -171,14 +171,16 @@ h4{
     list-style: none;
     padding:0;
     display: flex;
+    justify-content: space-evenly;
 }
 
 .iconos-caracteristicas li{
     display: flex;
 }
 
-
-
+.iconos-caracteristicas li img{
+    margin: 1rem;
+}
 
 
 /*Banner index*/
@@ -199,3 +201,100 @@ h4{
 .texto-banner p{
     font-size: 1rem;
 }
+
+
+/*Sección inferior*/
+
+.seccion-inferior{
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog{
+  flex-basis: 65%;
+}
+
+.testimoniales{
+  flex-basis: calc(35% - 1rem);
+}
+
+.blog-elementos{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.imagen-blog{
+    flex-basis: 40%;
+}
+
+.texto-blog{
+    flex-basis: calc(60% - 2rem);
+    line-height: 1.5;
+}
+
+.texto-blog h3{
+    margin: 0;
+}
+
+
+.texto-blog h3::after{
+    content: '';
+    display: block;
+    border: 1px #71B100 solid;
+    width: 10rem;
+    height: 0.5rem;
+    background-color:#71B100;
+}
+/*
+.texto-testimoniales{
+    background-color: #71B100;
+    font-size: 1.2rem;
+    padding: 1.5rem;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 2;
+    border-radius: 1.5rem;
+    text-align: left;
+}
+
+.texto-testimoniales p{
+    text-align: end;
+}
+
+.texto-testimoniales blockquote::before{
+    content: '';
+    background-image: url(../img/comilla.svg);
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    left: -2rem;
+}
+
+.texto-testimoniales blockquote{
+    position: relative;
+    padding-left: 2rem;
+}
+*/
+
+/*Footer*/
+
+.footer{
+    background-color: #454545;
+   
+}
+
+.contenedor-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.footer h4{
+   color: #ffffff; 
+}
+
+.footer h4:last-of-type{
+   margin: 0; 
+}
+
